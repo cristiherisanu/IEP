@@ -7,11 +7,11 @@ class Pasta: public Food{
     Pasta() = delete;
     virtual ~Pasta() = default;
     Pasta(std::string eatingTime, std::string difficultyToCook, int boilTime);
-    Pasta(const Pasta& otherPasta);
+    Pasta(const Pasta& otherPasta) = delete;
     Pasta(Pasta&& otherPasta) = delete;
-    Pasta& operator=(const Pasta& otherPasta);
+    Pasta& operator=(const Pasta& otherPasta) = delete;
     Pasta& operator=(Pasta&& otherPasta) = delete;
-    void showAttributes() override;
+    void showAttributes() const override;
 
     void setBoilTime(int newBoilTime);
     private:

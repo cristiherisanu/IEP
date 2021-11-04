@@ -21,7 +21,7 @@ Pizza& Pizza::operator=(const Pizza& otherPizza)
     return *this;
 }
 
-void Pizza::showAttributes(){std::cout<<eatingTime_<<" "<<difficultyToCook_<<" "<<type_<<std::endl;} 
+void Pizza::showAttributes()const {std::cout<<eatingTime_<<" "<<difficultyToCook_<<" "<<type_<<std::endl;} 
 
 void Pizza::setType(std::string newType)
     {

@@ -10,8 +10,8 @@ class Pizza: public Food{
     Pizza(const Pizza& otherPizza);
     Pizza(Pizza&& otherPizza) = delete;
     Pizza& operator=(const Pizza& otherPizza);
-    Pizza&& operator=(Pizza&& otherPizza) = delete;
-    void showAttributes() override;
+    Pizza& operator=(Pizza&& otherPizza) = delete;
+    void showAttributes() const override;
 
     void setType(std::string newType);
     private:

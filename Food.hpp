@@ -14,7 +14,7 @@ class Food{
     Food& operator=(const Food& otherFood);
     Food&& operator=(Food&& otherFood) = delete;
 
-    virtual void showAttributes() = 0;
+    virtual void showAttributes()const = 0;
 
     void setEatingTime(std::string newEatingTime);
     void setDifficultyToCook(std::string newDifficultyToCook);

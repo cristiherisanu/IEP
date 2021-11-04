@@ -5,12 +5,12 @@ Food(eatingTime, difficultyToCook),
 boilTime_(boilTime)
 {}
 
-Pasta::Pasta(const Pasta& otherPasta):
+/*Pasta::Pasta(const Pasta& otherPasta):
 Food(otherPasta), 
 boilTime_(otherPasta.boilTime_)
-{}
+{}*/
 
-Pasta& Pasta::operator=(const Pasta& otherPasta)
+/*Pasta& Pasta::operator=(const Pasta& otherPasta)
 {
     if(this != &otherPasta)
     {
@@ -19,9 +19,9 @@ Pasta& Pasta::operator=(const Pasta& otherPasta)
         return *this;
     }
     return *this;
-}
+}*/
 
-void Pasta::showAttributes(){std::cout<<eatingTime_<<" "<<difficultyToCook_<<" "<<boilTime_<<std::endl;} 
+void Pasta::showAttributes()const {std::cout<<"Pasta attributes: "<<eatingTime_<<" "<<difficultyToCook_<<" "<<boilTime_<<std::endl;} 
 
 void Pasta::setBoilTime(int newBoilTime)
     {
