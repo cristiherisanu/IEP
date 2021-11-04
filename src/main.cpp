@@ -10,8 +10,6 @@ int main()
     std::string eatingTime, difficultyToCook,type;
     std::string eatingTimeDefault("seara"), difficultyToCookDefault("mediu"),typeDefault("margherita");
     std::shared_ptr<Food> someFood, someFoodDefault;
-    while(choice==1 || choice==2)
-    {
         std::cout<<"1-Pizza"<<std::endl<<"2-Pasta"<<std::endl;
         std::cin>>choice;
         switch(choice)
@@ -41,6 +39,7 @@ int main()
 
                 std::shared_ptr<Food> otherFood = std::make_shared<Pizza>((Pizza&)*someFoodDefault); //copy constructor
                 otherFood->showAttributes();
+                break;
             }
             case 2:
             {
@@ -66,11 +65,10 @@ int main()
                 //someFoodDefault->showAttributes();
 
                 //std::shared_ptr<Food> otherFood = std::make_shared<Pasta>((Pasta&)*someFoodDefault); //copy constructor error
+                break;
             }
             default:
             break;
-
         }
-    }
 
 }
