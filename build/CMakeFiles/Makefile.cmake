@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../Food/CMakeLists.txt"
+  "../Pasta/CMakeLists.txt"
+  "../Pizza/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -41,9 +44,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Food/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Pizza/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Pasta/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/IEP.dir/DependInfo.cmake"
+  "Food/CMakeFiles/Food.dir/DependInfo.cmake"
+  "Pizza/CMakeFiles/Pizza.dir/DependInfo.cmake"
+  "Pasta/CMakeFiles/Pasta.dir/DependInfo.cmake"
   )

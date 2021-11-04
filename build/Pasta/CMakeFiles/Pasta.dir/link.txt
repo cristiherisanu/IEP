@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPasta.a  CMakeFiles/Pasta.dir/Pasta.cpp.o
+/usr/bin/ranlib libPasta.a

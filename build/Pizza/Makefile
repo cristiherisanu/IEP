@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles /home/cristi/Desktop/IEP/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/cristi/Desktop/IEP/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles /home/cristi/Desktop/IEP/build/Pizza/CMakeFiles/progress.marks
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f CMakeFiles/Makefile2 Pizza/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f CMakeFiles/Makefile2 Pizza/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,97 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f CMakeFiles/Makefile2 Pizza/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f CMakeFiles/Makefile2 Pizza/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cristi/Desktop/IEP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named IEP
+# Convenience name for target.
+Pizza/CMakeFiles/Pizza.dir/rule:
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f CMakeFiles/Makefile2 Pizza/CMakeFiles/Pizza.dir/rule
+.PHONY : Pizza/CMakeFiles/Pizza.dir/rule
 
-# Build rule for target.
-IEP: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IEP
-.PHONY : IEP
+# Convenience name for target.
+Pizza: Pizza/CMakeFiles/Pizza.dir/rule
 
-# fast build rule for target.
-IEP/fast:
-	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/build
-.PHONY : IEP/fast
-
-#=============================================================================
-# Target rules for targets named Food
-
-# Build rule for target.
-Food: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Food
-.PHONY : Food
-
-# fast build rule for target.
-Food/fast:
-	$(MAKE) -f Food/CMakeFiles/Food.dir/build.make Food/CMakeFiles/Food.dir/build
-.PHONY : Food/fast
-
-#=============================================================================
-# Target rules for targets named Pizza
-
-# Build rule for target.
-Pizza: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Pizza
 .PHONY : Pizza
 
 # fast build rule for target.
 Pizza/fast:
-	$(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/build
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/build
 .PHONY : Pizza/fast
 
-#=============================================================================
-# Target rules for targets named Pasta
+Pizza.o: Pizza.cpp.o
 
-# Build rule for target.
-Pasta: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Pasta
-.PHONY : Pasta
-
-# fast build rule for target.
-Pasta/fast:
-	$(MAKE) -f Pasta/CMakeFiles/Pasta.dir/build.make Pasta/CMakeFiles/Pasta.dir/build
-.PHONY : Pasta/fast
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : Pizza.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+Pizza.cpp.o:
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/Pizza.cpp.o
+.PHONY : Pizza.cpp.o
 
-src/main.i: src/main.cpp.i
+Pizza.i: Pizza.cpp.i
 
-.PHONY : src/main.i
+.PHONY : Pizza.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+Pizza.cpp.i:
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/Pizza.cpp.i
+.PHONY : Pizza.cpp.i
 
-src/main.s: src/main.cpp.s
+Pizza.s: Pizza.cpp.s
 
-.PHONY : src/main.s
+.PHONY : Pizza.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+Pizza.cpp.s:
+	cd /home/cristi/Desktop/IEP/build && $(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/Pizza.cpp.s
+.PHONY : Pizza.cpp.s
 
 # Help Target
 help:
@@ -197,13 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... IEP"
-	@echo "... Food"
 	@echo "... Pizza"
-	@echo "... Pasta"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... Pizza.o"
+	@echo "... Pizza.i"
+	@echo "... Pizza.s"
 .PHONY : help
 
 
@@ -215,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cristi/Desktop/IEP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

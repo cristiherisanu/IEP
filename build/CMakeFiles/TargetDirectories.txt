@@ -1,3 +1,12 @@
 /home/cristi/Desktop/IEP/build/CMakeFiles/rebuild_cache.dir
 /home/cristi/Desktop/IEP/build/CMakeFiles/edit_cache.dir
-/home/cristi/Desktop/IEP/build/CMakeFiles/main.dir
+/home/cristi/Desktop/IEP/build/CMakeFiles/IEP.dir
+/home/cristi/Desktop/IEP/build/Food/CMakeFiles/rebuild_cache.dir
+/home/cristi/Desktop/IEP/build/Food/CMakeFiles/edit_cache.dir
+/home/cristi/Desktop/IEP/build/Food/CMakeFiles/Food.dir
+/home/cristi/Desktop/IEP/build/Pizza/CMakeFiles/rebuild_cache.dir
+/home/cristi/Desktop/IEP/build/Pizza/CMakeFiles/edit_cache.dir
+/home/cristi/Desktop/IEP/build/Pizza/CMakeFiles/Pizza.dir
+/home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/rebuild_cache.dir
+/home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/edit_cache.dir
+/home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/Pasta.dir
