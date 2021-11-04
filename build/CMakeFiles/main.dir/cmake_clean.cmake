@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Food.cpp.o"
+  "CMakeFiles/main.dir/Pasta.cpp.o"
   "CMakeFiles/main.dir/Pizza.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o"
   "main"

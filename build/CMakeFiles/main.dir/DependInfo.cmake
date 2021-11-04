@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/cristi/Desktop/IEP/Food.cpp" "/home/cristi/Desktop/IEP/build/CMakeFiles/main.dir/Food.cpp.o"
+  "/home/cristi/Desktop/IEP/Pasta.cpp" "/home/cristi/Desktop/IEP/build/CMakeFiles/main.dir/Pasta.cpp.o"
   "/home/cristi/Desktop/IEP/Pizza.cpp" "/home/cristi/Desktop/IEP/build/CMakeFiles/main.dir/Pizza.cpp.o"
   "/home/cristi/Desktop/IEP/main.cpp" "/home/cristi/Desktop/IEP/build/CMakeFiles/main.dir/main.cpp.o"
   )

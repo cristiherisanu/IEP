@@ -4,11 +4,16 @@
 CMakeFiles/main.dir/Food.cpp.o: ../Food.cpp
 CMakeFiles/main.dir/Food.cpp.o: ../Food.hpp
 
+CMakeFiles/main.dir/Pasta.cpp.o: ../Food.hpp
+CMakeFiles/main.dir/Pasta.cpp.o: ../Pasta.cpp
+CMakeFiles/main.dir/Pasta.cpp.o: ../Pasta.hpp
+
 CMakeFiles/main.dir/Pizza.cpp.o: ../Food.hpp
 CMakeFiles/main.dir/Pizza.cpp.o: ../Pizza.cpp
 CMakeFiles/main.dir/Pizza.cpp.o: ../Pizza.hpp
 
 CMakeFiles/main.dir/main.cpp.o: ../Food.hpp
+CMakeFiles/main.dir/main.cpp.o: ../Pasta.hpp
 CMakeFiles/main.dir/main.cpp.o: ../Pizza.hpp
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

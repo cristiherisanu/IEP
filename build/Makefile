@@ -150,6 +150,33 @@ Food.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Food.cpp.s
 .PHONY : Food.cpp.s
 
+Pasta.o: Pasta.cpp.o
+
+.PHONY : Pasta.o
+
+# target to build an object file
+Pasta.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Pasta.cpp.o
+.PHONY : Pasta.cpp.o
+
+Pasta.i: Pasta.cpp.i
+
+.PHONY : Pasta.i
+
+# target to preprocess a source file
+Pasta.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Pasta.cpp.i
+.PHONY : Pasta.cpp.i
+
+Pasta.s: Pasta.cpp.s
+
+.PHONY : Pasta.s
+
+# target to generate assembly for a file
+Pasta.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Pasta.cpp.s
+.PHONY : Pasta.cpp.s
+
 Pizza.o: Pizza.cpp.o
 
 .PHONY : Pizza.o
@@ -216,6 +243,9 @@ help:
 	@echo "... Food.o"
 	@echo "... Food.i"
 	@echo "... Food.s"
+	@echo "... Pasta.o"
+	@echo "... Pasta.i"
+	@echo "... Pasta.s"
 	@echo "... Pizza.o"
 	@echo "... Pizza.i"
 	@echo "... Pizza.s"
