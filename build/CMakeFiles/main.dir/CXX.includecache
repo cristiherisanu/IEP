@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cristi/Desktop/IEP/Food.hpp
+iostream
+-
+string
+-
+
+/home/cristi/Desktop/IEP/Pizza.hpp
+Food.hpp
+/home/cristi/Desktop/IEP/Food.hpp
+
+/home/cristi/Desktop/IEP/main.cpp
+Pizza.hpp
+/home/cristi/Desktop/IEP/Pizza.hpp
+string
+-
+memory
+-
+
