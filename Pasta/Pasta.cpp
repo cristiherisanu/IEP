@@ -16,7 +16,6 @@ boilTime_(otherPasta.boilTime_)
     {
         (Food&)(*this) = otherPasta;
         boilTime_=otherPasta.boilTime_;
-        return *this;
     }
     return *this;
 }*/

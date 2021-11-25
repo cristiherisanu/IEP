@@ -32,12 +32,18 @@ int main()
                 std::cout<<std::endl;
                 someFood = std::make_shared<Pizza>(eatingTime,difficultyToCook,type);
                 someFoodDefault= std::make_shared<Pizza>(eatingTimeDefault,difficultyToCookDefault,typeDefault);
+                std::cout<<"pizza with given parameters: ";
                 someFood->showAttributes();
+                std::cout<<"pizza with default parameters: ";
                 someFoodDefault->showAttributes();
+                std::cout<<"copy the first one in the second one: ";
                 (Pizza&)*someFoodDefault=(Pizza&)*someFood; //copy assignment operator;
                 someFoodDefault->showAttributes();
-
+                std::cout<<"copy constructor called with the last values:";
                 std::shared_ptr<Food> otherFood = std::make_shared<Pizza>((Pizza&)*someFoodDefault); //copy constructor
+                otherFood->showAttributes();
+                std::cout<<"trying self assignment of last object: ";
+                (Pizza&)*otherFood=(Pizza&)*otherFood;
                 otherFood->showAttributes();
                 break;
             }

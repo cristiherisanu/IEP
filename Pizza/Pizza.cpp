@@ -16,7 +16,10 @@ Pizza& Pizza::operator=(const Pizza& otherPizza)
     {
         (Food&)(*this) = otherPizza;
         type_=otherPizza.type_;
-        return *this;
+    }
+    else
+    {
+        std::cout<<"warning: self assignment"<<std::endl;
     }
     return *this;
 }

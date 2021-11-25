@@ -16,7 +16,6 @@ Food& Food::operator=(const Food& otherFood)
     {
         eatingTime_=otherFood.eatingTime_;
         difficultyToCook_=otherFood.difficultyToCook_;
-        return *this;
     }
     return *this;
 }
