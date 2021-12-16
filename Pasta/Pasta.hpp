@@ -6,7 +6,7 @@ class Pasta: public Food{
     public:
     Pasta() = delete;
     virtual ~Pasta() = default;
-    Pasta(std::string eatingTime, std::string difficultyToCook, int boilTime);
+    Pasta(std::shared_ptr<const std::string> eatingTime, std::shared_ptr<const std::string> difficultyToCook, int boilTime);
     Pasta(const Pasta& otherPasta) = delete;
     Pasta(Pasta&& otherPasta) = delete;
     Pasta& operator=(const Pasta& otherPasta) = delete;

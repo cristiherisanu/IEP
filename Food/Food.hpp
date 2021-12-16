@@ -2,12 +2,13 @@
 #define FOOD_H
 #include <iostream>
 #include <string>
+#include <memory>
 
 class Food{
     public:
     Food() = delete;
     virtual ~Food() = default;
-    Food(std::string eatingTime, std::string difficultyToCook);
+    Food(std::shared_ptr<const std::string> eatingTime, std::shared_ptr<const std::string> difficultyToCook);
     Food(const Food& otherFood);
     Food(Food&& otherFood) = delete;
 
@@ -16,13 +17,13 @@ class Food{
 
     virtual void showAttributes()const = 0;
 
-    void setEatingTime(std::string newEatingTime);
-    void setDifficultyToCook(std::string newDifficultyToCook);
+    void setEatingTime(std::shared_ptr<const std::string> newEatingTime);
+    void setDifficultyToCook(std::shared_ptr<const std::string> newDifficultyToCook);
 
-    std::string getEatingTime();
-    std::string getDifficultyToCook();
+    std::shared_ptr<const std::string> getEatingTime();
+    std::shared_ptr<const std::string> getDifficultyToCook();
     protected:
-    std::string eatingTime_;
-    std::string difficultyToCook_;
+    std::shared_ptr<const std::string> eatingTime_;
+    std::shared_ptr<const std::string> difficultyToCook_;
 };
 #endif

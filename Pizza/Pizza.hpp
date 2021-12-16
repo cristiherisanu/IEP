@@ -6,15 +6,15 @@ class Pizza: public Food{
     public:
     Pizza() = delete;
     virtual ~Pizza() = default;
-    Pizza(std::string eatingTime, std::string difficultyToCook, std::string type);
+    Pizza(std::shared_ptr<const std::string> eatingTime, std::shared_ptr<const std::string> difficultyToCook, std::shared_ptr<const std::string> type);
     Pizza(const Pizza& otherPizza);
     Pizza(Pizza&& otherPizza) = delete;
     Pizza& operator=(const Pizza& otherPizza);
     Pizza& operator=(Pizza&& otherPizza) = delete;
     void showAttributes() const override;
 
-    void setType(std::string newType);
+    void setType(std::shared_ptr<const std::string> newType);
     private:
-    std::string type_;
+    std::shared_ptr<const std::string> type_;
 };
 #endif

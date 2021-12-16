@@ -1,6 +1,6 @@
 #include "Pizza.hpp"
 
-Pizza::Pizza(std::string eatingTime, std::string difficultyToCook, std::string type):
+Pizza::Pizza(std::shared_ptr<const std::string> eatingTime, std::shared_ptr<const std::string> difficultyToCook, std::shared_ptr<const std::string> type):
 Food(eatingTime, difficultyToCook), 
 type_(type)
 {}
@@ -24,9 +24,9 @@ Pizza& Pizza::operator=(const Pizza& otherPizza)
     return *this;
 }
 
-void Pizza::showAttributes()const {std::cout<<eatingTime_<<" "<<difficultyToCook_<<" "<<type_<<std::endl;} 
+void Pizza::showAttributes()const {std::cout<<*eatingTime_<<" "<<*difficultyToCook_<<" "<<*type_<<std::endl;} 
 
-void Pizza::setType(std::string newType)
+void Pizza::setType(std::shared_ptr<const std::string> newType)
     {
         type_=newType;
     }

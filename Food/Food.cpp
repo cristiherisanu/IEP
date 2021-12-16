@@ -1,6 +1,6 @@
 #include "Food.hpp"
 
-Food::Food(std::string eatingTime, std::string difficultyToCook):
+Food::Food(std::shared_ptr<const std::string> eatingTime, std::shared_ptr<const std::string> difficultyToCook):
 eatingTime_(eatingTime), 
 difficultyToCook_(difficultyToCook)
 {}
@@ -20,20 +20,20 @@ Food& Food::operator=(const Food& otherFood)
     return *this;
 }
 
-void Food::setEatingTime(std::string newEatingTime)
+void Food::setEatingTime(std::shared_ptr<const std::string> newEatingTime)
 {
     eatingTime_=newEatingTime;
 }
-void Food::setDifficultyToCook(std::string newDifficultyToCook)
+void Food::setDifficultyToCook(std::shared_ptr<const std::string> newDifficultyToCook)
 {
     difficultyToCook_=newDifficultyToCook;
 }
 
-std::string Food::getEatingTime()
+std::shared_ptr<const std::string> Food::getEatingTime()
 {
     return eatingTime_;
 }
-std::string Food::getDifficultyToCook()
+std::shared_ptr<const std::string> Food::getDifficultyToCook()
 {
     return difficultyToCook_;
 }
