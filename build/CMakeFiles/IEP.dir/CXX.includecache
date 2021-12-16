@@ -11,6 +11,14 @@ iostream
 -
 string
 -
+memory
+-
+
+../Lock/Lock.hpp
+iostream
+-
+mutex
+-
 
 ../Pasta/Pasta.hpp
 Food.hpp
@@ -25,8 +33,10 @@ Pizza.hpp
 /home/cristi/Desktop/IEP/src/Pizza.hpp
 Pasta.hpp
 /home/cristi/Desktop/IEP/src/Pasta.hpp
+Lock.hpp
+/home/cristi/Desktop/IEP/src/Lock.hpp
 string
 -
-memory
+thread
 -
 

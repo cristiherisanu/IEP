@@ -10,3 +10,6 @@
 /home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/rebuild_cache.dir
 /home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/edit_cache.dir
 /home/cristi/Desktop/IEP/build/Pasta/CMakeFiles/Pasta.dir
+/home/cristi/Desktop/IEP/build/Lock/CMakeFiles/rebuild_cache.dir
+/home/cristi/Desktop/IEP/build/Lock/CMakeFiles/edit_cache.dir
+/home/cristi/Desktop/IEP/build/Lock/CMakeFiles/Lock.dir

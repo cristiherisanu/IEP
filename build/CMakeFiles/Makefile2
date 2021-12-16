@@ -57,6 +57,7 @@ all: CMakeFiles/IEP.dir/all
 all: Food/all
 all: Pizza/all
 all: Pasta/all
+all: Lock/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ all: Pasta/all
 preinstall: Food/preinstall
 preinstall: Pizza/preinstall
 preinstall: Pasta/preinstall
+preinstall: Lock/preinstall
 
 .PHONY : preinstall
 
@@ -72,6 +74,7 @@ clean: CMakeFiles/IEP.dir/clean
 clean: Food/clean
 clean: Pizza/clean
 clean: Pasta/clean
+clean: Lock/clean
 
 .PHONY : clean
 
@@ -92,6 +95,24 @@ Food/preinstall:
 Food/clean: Food/CMakeFiles/Food.dir/clean
 
 .PHONY : Food/clean
+
+#=============================================================================
+# Directory level rules for directory Lock
+
+# Recursive "all" directory target.
+Lock/all: Lock/CMakeFiles/Lock.dir/all
+
+.PHONY : Lock/all
+
+# Recursive "preinstall" directory target.
+Lock/preinstall:
+
+.PHONY : Lock/preinstall
+
+# Recursive "clean" directory target.
+Lock/clean: Lock/CMakeFiles/Lock.dir/clean
+
+.PHONY : Lock/clean
 
 #=============================================================================
 # Directory level rules for directory Pasta
@@ -136,6 +157,7 @@ Pizza/clean: Pizza/CMakeFiles/Pizza.dir/clean
 CMakeFiles/IEP.dir/all: Food/CMakeFiles/Food.dir/all
 CMakeFiles/IEP.dir/all: Pizza/CMakeFiles/Pizza.dir/all
 CMakeFiles/IEP.dir/all: Pasta/CMakeFiles/Pasta.dir/all
+CMakeFiles/IEP.dir/all: Lock/CMakeFiles/Lock.dir/all
 	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/depend
 	$(MAKE) -f CMakeFiles/IEP.dir/build.make CMakeFiles/IEP.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=3,4 "Built target IEP"
@@ -143,7 +165,7 @@ CMakeFiles/IEP.dir/all: Pasta/CMakeFiles/Pasta.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IEP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/IEP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 0
 .PHONY : CMakeFiles/IEP.dir/rule
@@ -192,7 +214,7 @@ Food/CMakeFiles/Food.dir/clean:
 Pizza/CMakeFiles/Pizza.dir/all: Food/CMakeFiles/Food.dir/all
 	$(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/depend
 	$(MAKE) -f Pizza/CMakeFiles/Pizza.dir/build.make Pizza/CMakeFiles/Pizza.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=7,8 "Built target Pizza"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=9,10 "Built target Pizza"
 .PHONY : Pizza/CMakeFiles/Pizza.dir/all
 
 # Build rule for subdir invocation for target.
@@ -219,7 +241,7 @@ Pizza/CMakeFiles/Pizza.dir/clean:
 Pasta/CMakeFiles/Pasta.dir/all: Food/CMakeFiles/Food.dir/all
 	$(MAKE) -f Pasta/CMakeFiles/Pasta.dir/build.make Pasta/CMakeFiles/Pasta.dir/depend
 	$(MAKE) -f Pasta/CMakeFiles/Pasta.dir/build.make Pasta/CMakeFiles/Pasta.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=5,6 "Built target Pasta"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=7,8 "Built target Pasta"
 .PHONY : Pasta/CMakeFiles/Pasta.dir/all
 
 # Build rule for subdir invocation for target.
@@ -238,6 +260,33 @@ Pasta: Pasta/CMakeFiles/Pasta.dir/rule
 Pasta/CMakeFiles/Pasta.dir/clean:
 	$(MAKE) -f Pasta/CMakeFiles/Pasta.dir/build.make Pasta/CMakeFiles/Pasta.dir/clean
 .PHONY : Pasta/CMakeFiles/Pasta.dir/clean
+
+#=============================================================================
+# Target rules for target Lock/CMakeFiles/Lock.dir
+
+# All Build rule for target.
+Lock/CMakeFiles/Lock.dir/all:
+	$(MAKE) -f Lock/CMakeFiles/Lock.dir/build.make Lock/CMakeFiles/Lock.dir/depend
+	$(MAKE) -f Lock/CMakeFiles/Lock.dir/build.make Lock/CMakeFiles/Lock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=5,6 "Built target Lock"
+.PHONY : Lock/CMakeFiles/Lock.dir/all
+
+# Build rule for subdir invocation for target.
+Lock/CMakeFiles/Lock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Lock/CMakeFiles/Lock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/Desktop/IEP/build/CMakeFiles 0
+.PHONY : Lock/CMakeFiles/Lock.dir/rule
+
+# Convenience name for target.
+Lock: Lock/CMakeFiles/Lock.dir/rule
+
+.PHONY : Lock
+
+# clean rule for target.
+Lock/CMakeFiles/Lock.dir/clean:
+	$(MAKE) -f Lock/CMakeFiles/Lock.dir/build.make Lock/CMakeFiles/Lock.dir/clean
+.PHONY : Lock/CMakeFiles/Lock.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

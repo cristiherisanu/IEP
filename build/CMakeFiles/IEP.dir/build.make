@@ -82,6 +82,7 @@ IEP: CMakeFiles/IEP.dir/build.make
 IEP: Food/libFood.a
 IEP: Pizza/libPizza.a
 IEP: Pasta/libPasta.a
+IEP: Lock/libLock.a
 IEP: Food/libFood.a
 IEP: CMakeFiles/IEP.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cristi/Desktop/IEP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IEP"

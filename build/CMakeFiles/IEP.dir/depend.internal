@@ -3,6 +3,7 @@
 
 CMakeFiles/IEP.dir/src/main.cpp.o
  ../Food/Food.hpp
+ ../Lock/Lock.hpp
  ../Pasta/Pasta.hpp
  ../Pizza/Pizza.hpp
  /home/cristi/Desktop/IEP/src/main.cpp

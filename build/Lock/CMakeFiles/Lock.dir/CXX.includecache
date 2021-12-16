@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/cristi/Desktop/IEP/Food/Food.cpp
-Food.hpp
-/home/cristi/Desktop/IEP/Food/Food.hpp
+/home/cristi/Desktop/IEP/Lock/Lock.cpp
+Lock.hpp
+/home/cristi/Desktop/IEP/Lock/Lock.hpp
 
-/home/cristi/Desktop/IEP/Food/Food.hpp
+/home/cristi/Desktop/IEP/Lock/Lock.hpp
 iostream
 -
-string
--
-memory
+mutex
 -
 

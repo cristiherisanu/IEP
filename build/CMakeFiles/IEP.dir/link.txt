@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/IEP.dir/src/main.cpp.o  -o IEP  Food/libFood.a Pizza/libPizza.a Pasta/libPasta.a Food/libFood.a 
+/usr/bin/c++   -pthread   CMakeFiles/IEP.dir/src/main.cpp.o  -o IEP  Food/libFood.a Pizza/libPizza.a Pasta/libPasta.a Lock/libLock.a Food/libFood.a 
